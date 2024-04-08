@@ -1,6 +1,7 @@
 package fa.training.main;
 
 import fa.training.entities.Multimedia;
+import fa.training.entities.Song;
 import fa.training.entities.Video;
 import fa.training.management.MultimediaManagement;
 import fa.training.utils.Validator;
@@ -21,11 +22,14 @@ public class Test {
                 case 1:
                     System.out.println("------------- Enter Video Information -------------");
                     Video m = new Video();
-                    m.createMultimedia();
+                    m.createVideo();
                     mananger.addMultimedia(m);
                     break;
                 case 2:
                     System.out.println("------------- Enter Song Information -------------");
+                    Song s = new Song();
+                    s.createSong();
+                    mananger.addMultimedia(s);
                     break;
                 case 3:
                     System.out.println("------------- List of multimedia -------------");
